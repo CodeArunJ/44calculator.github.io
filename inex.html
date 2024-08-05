@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="particles"></div>
+    <div class="container">
+        <h1>Simple Calculator</h1>
+        <p class="description">A basic calculator to perform simple arithmetic operations.</p>
+        <div class="calculator">
+            <label for="display">Display:</label>
+            <input type="text" id="display" readonly>
+            <div class="buttons">
+                <button class="btn" onclick="calculator.clearDisplay()">C</button>
+                <button class="btn" onclick="calculator.appendToDisplay('/')">/</button>
+                <button class="btn" onclick="calculator.appendToDisplay('*')">*</button>
+                <button class="btn" onclick="calculator.appendToDisplay('-')">-</button>
+                <button class="btn" onclick="calculator.appendToDisplay('7')">7</button>
+                <button class="btn" onclick="calculator.appendToDisplay('8')">8</button>
+                <button class="btn" onclick="calculator.appendToDisplay('9')">9</button>
+                <button class="btn" onclick="calculator.appendToDisplay('+')">+</button>
+                <button class="btn" onclick="calculator.appendToDisplay('4')">4</button>
+                <button class="btn" onclick="calculator.appendToDisplay('5')">5</button>
+                <button class="btn" onclick="calculator.appendToDisplay('6')">6</button>
+                <button class="btn" onclick="calculator.calculateResult()">=</button>
+                <button class="btn" onclick="calculator.appendToDisplay('1')">1</button>
+                <button class="btn" onclick="calculator.appendToDisplay('2')">2</button>
+                <button class="btn" onclick="calculator.appendToDisplay('3')">3</button>
+                <button class="btn" onclick="calculator.appendToDisplay('0')">0</button>
+                <button class="btn" onclick="calculator.appendToDisplay('.')">.</button>
+                <button class="btn" onclick="calculator.deleteLastCharacter()">&#9003;</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
